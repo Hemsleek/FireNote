@@ -2,7 +2,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-red-50">
       HELLO FIRENOTE
     </div>
   );
