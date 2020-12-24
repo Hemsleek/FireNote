@@ -14,7 +14,7 @@ const LandingPage = () => {
                 {
                     navBarEl.map((item, itemIndex) => 
                     (<span 
-                        className={`ml-6 text-sm cursor-pointer hover:text-gray-400 ${item=='Sign Up'? 'border-2 rounded border-gray-300 py-1 px-3 ': item=='Log in'?'border-l-2 border-gray-300 py-1 px-3.5':''}`} key={`navItem_${itemIndex}`} >
+                        className={`ml-6 text-sm cursor-pointer hover:text-gray-400 ${item==='Sign Up'? 'border-2 rounded border-gray-300 py-1 px-3 ': item==='Log in'?'border-l-2 border-gray-300 py-1 px-3.5':''}`} key={`navItem_${itemIndex}`} >
                             {item}
                     </span>))
                 }
@@ -26,7 +26,7 @@ const LandingPage = () => {
                 <p className="my-8 text-lg">
                 All your notes, synced on all your devices. Get Simplenote now for iOS,<br /> Android, Mac, Windows, Linux, or in your browser.
                 </p>
-                <button className="bg-blue-600 text-white rounded-sm py-2 px-5 hover:bg-blue-800 ">
+                <button className="bg-blue-600 text-white rounded-sm py-2 px-5 hover:bg-blue-800 focus:outline-none ">
                     <Link to='/get_started' >Sign up now</Link>
                 </button>
             </main>
